@@ -1,0 +1,36 @@
+@import (reference) '_base.less';
+@import (reference) '_mixin.less';
+
+
+
+.sidebar{
+	background: @sidebarColor - 40;
+	color:@sidebarfontColor;
+	position:fixed;
+	top: 39px;
+	width: 80px;
+	left: 0;
+	overflow-y: auto;
+	.sidebox{
+		width: 80px;
+		height: 100%;
+		background: @sidebarColor;
+		a{
+			height: 54px;
+			display: block;
+			color: @sidebarfontColor;
+			text-align: center;
+			&:hover,
+			&:active{
+				background: (@sidebarColor - 20)
+			}
+		}
+	}
+}
+
+.sidebody{
+	margin-left: 260px;
+	.sidebar{
+		width: 260px;
+	}
+}
